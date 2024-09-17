@@ -13,7 +13,7 @@ schema = graphene.Schema(query=Query, mutation=Mutation)
 
 app.add_url_rule(
     '/graphql',
-    view_func=GraphQLView.as_view('graphql', schema-schema, graphiql=True)
+    view_func=GraphQLView.as_view('graphql', schema=schema, graphiql=True)
 )
 
 with app.app_context():

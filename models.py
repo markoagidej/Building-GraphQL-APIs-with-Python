@@ -6,7 +6,7 @@ class Base(DeclarativeBase):
 
 db = SQLAlchemy(model_class=Base)
 
-class BakeryItem(Base):
+class BakeryProduct(Base):
     __tablename__ = 'bakery_items'
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(db.String(100), nullable=False)
